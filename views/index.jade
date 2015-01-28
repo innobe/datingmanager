@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  div#map(style='width:100%;height:350px;')
+  
+  script(type='text/javascript' src='//apis.daum.net/maps/maps3.js?apikey=23fc1413a91fae451018d2f7ab08733f&libraries=services')
+  script(type='text/javascript' src='/javascripts/map_util.js')
+        
